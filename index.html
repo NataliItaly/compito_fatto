@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,400&family=Magra&family=Red+Hat+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/travel-icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"><span class="logo-span">Travel Portal</span></div>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#preview" class="menu-link">How It Works</a>
+            </li>
+            <li class="menu-item">
+              <a href="#steps" class="menu-link">Plan Your Trip</a>
+            </li>
+            <li class="menu-item">
+              <a href="#destinations" class="menu-link">Destinations</a>
+            </li>
+            <li class="menu-item">
+              <a href="#stories" class="menu-link">Travel Stories</a>
+            </li>
+            <li class="menu-item">
+              <a href="#account" class="menu-link">Account</a>
+            </li>
+            <li class="menu-item">
+              <a href="#social" class="menu-link">Social Media</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button login-btn">Login</button>
+        <div class="burger">
+          <span class="burger-line"></span><span class="burger-line"></span
+          ><span class="burger-line"></span>
+        </div>
+        <!--burger menu-->
+        <input type="checkbox" id="toggle-menu" class="checkbox" />
+        <label for="toggle-menu" class="burger-icon">
+          <span class="icon">&nbsp;</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="preview" class="preview">
+        <div class="container">
+          <div class="preview-text-wrapper">
+            <h1>
+              Explore the beauty of <br />
+              the World
+            </h1>
+            <p class="recomendation">
+              Recieve personalized recommendations for countries, hotels,
+              activities and more
+            </p>
+            <form action=" " class="preview-form">
+              <input
+                type="text"
+                name=""
+                id="preview-form-input"
+                placeholder="What would you like to do?"
+              />
+              <input
+                type="submit"
+                value="Start Planning"
+                class="button start-planning-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="steps" class="steps">
+        <div class="container">
+          <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+          <ul class="steps-list">
+            <li class="steps-item">Tell us what you want to do</li>
+            <li class="steps-item">Share us preferable dates</li>
+            <li class="steps-item">We will give you recommendations</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="destinations" class="destinations">
+        <div class="container">
+          <h2 class="section-title">POPULAR DESTINATIONS</h2>
+          <button class="prev-btn arrow-btn"></button>
+          <ul class="destination-list">
+            <li class="destination-item">
+              <img src="assets/img/destination/destination-1.jpg" alt="" />
+            </li>
+            <li class="destination-item">
+              <img src="assets/img/destination/destination-2.jpg" alt="" />
+            </li>
+            <li class="destination-item">
+              <img src="assets/img/destination/destination-3.jpg" alt="" />
+            </li>
+          </ul>
+          <button class="next-btn arrow-btn"></button>
+          <div class="pagination-bullets">
+            <span class="bullet"></span>
+            <span class="bullet active"></span><span class="bullet"></span>
+          </div>
+          <button class="find-more button">Find More</button>
+        </div>
+      </section>
+
+      <section id="stories" class="stories">
+        <div class="container">
+          <h2 class="section-title">TRAVEL STORIES</h2>
+
+          <ul class="stories-list">
+            <li class="stories-item">
+              <div class="stories-text">
+                <h4 class="stories-title">10 Photos of Attractive Thailand</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla
+                  <span class="hidden-span"
+                    >pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum</span
+                  >.Lorem ipsum
+                  <span class="hidden-span"
+                    >dolor sit amet, consectetur adipiscing elit</span
+                  >...
+                  <a href="" id="stories-read-more">Read More</a>
+                </p>
+              </div>
+              <div class="stories-img-wrapper">
+                <img
+                  src="assets/img/stories/stories-1.jpg"
+                  alt="Attractive Thailand"
+                  class="stories-img"
+                />
+              </div>
+            </li>
+            <li class="stories-item">
+              <div class="stories-text">
+                <h4 class="stories-title">Canyonlands National Park, Utah</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla
+                  <span class="hidden-span"
+                    >pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum</span
+                  >.Lorem ipsum
+                  <span class="hidden-span"
+                    >dolor sit amet, consectetur adipiscing elit</span
+                  >...
+                  <a href="" id="stories-read-more">Read More</a>
+                </p>
+              </div>
+              <div class="stories-img-wrapper">
+                <img
+                  src="assets/img/stories/stories-2.jpg"
+                  alt="Canyonlands National Park"
+                  class="stories-img"
+                />
+              </div>
+            </li>
+            <li class="stories-item">
+              <div class="stories-text">
+                <h4 class="stories-title">I left my heart in the Mountains!</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla
+                  <span class="hidden-span"
+                    >pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum</span
+                  >.Lorem ipsum
+                  <span class="hidden-span"
+                    >dolor sit amet, consectetur adipiscing elit</span
+                  >...
+                  <a href="" id="stories-read-more">Read More</a>
+                </p>
+              </div>
+              <div class="stories-img-wrapper">
+                <img
+                  src="assets/img/stories/stories-3.jpg"
+                  alt="Mountains!"
+                  class="stories-img"
+                />
+              </div>
+            </li>
+            <li class="stories-item">
+              <div class="stories-text">
+                <h4 class="stories-title">The Longest journey in my life!</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla
+                  <span class="hidden-span"
+                    >pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum</span
+                  >.Lorem ipsum
+                  <span class="hidden-span"
+                    >dolor sit amet, consectetur adipiscing elit</span
+                  >...
+                  <a href="" id="stories-read-more">Read More</a>
+                </p>
+              </div>
+              <div class="stories-img-wrapper">
+                <img
+                  src="assets/img/stories/stories-4.jpg"
+                  alt="The Longest journey"
+                  class="stories-img"
+                />
+              </div>
+            </li>
+          </ul>
+          <button class="find-more button">See More</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="https://github.com/NataliItaly" class="git-hub-link"></a>
+        <a href="https://rs.school/js-stage0/" class="rs-link"
+          >All Rights Reserved © Travel Portal</a
+        >
+        <div class="footer-social" id="social">
+          <a href="" class="footer-social-link"></a
+          ><a href="" class="footer-social-link"></a
+          ><a href="" class="footer-social-link"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

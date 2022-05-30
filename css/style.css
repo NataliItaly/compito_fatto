@@ -1,0 +1,584 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*Универсальное решение, которое убирает подсветку во всех браузерах и не только на input, но и на других элементах, в том числе select, button, a:*/
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html,
+body {
+  height: fit-content;
+  margin: 0 auto;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d606f;
+}
+
+body {
+  position: relative;
+}
+
+a:link {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  transition: 0.6s all ease;
+}
+
+.button {
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  background: #0d606f;
+  transition: 0.6s all ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #18889b;
+}
+a:hover {
+  color: #bdae82;
+}
+section {
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  max-width: 1440px;
+  height: 100%;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  color: #ffffff;
+  position: absolute;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 216px;
+  height: 40px;
+  padding-left: 38px;
+  background-image: url("../assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-y: 2px;
+}
+
+.logo-span {
+  font-family: "Magra", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+  word-spacing: 4px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.checkbox {
+  display: none;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.menu {
+  margin-left: -40px;
+}
+
+.menu-item:nth-child(5),
+.menu-item:nth-child(6) {
+  display: none;
+}
+
+.menu-list {
+  width: 527px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-link:hover {
+  color: #6bdaed;
+}
+
+.login-btn {
+  width: 103px;
+  height: 41px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+}
+
+.burger {
+  display: none;
+}
+
+.preview {
+  height: 765px;
+  color: #ffffff;
+  padding-top: 90px;
+  background-image: url("../assets/img/preview-bg.jpg");
+}
+
+.preview-text-wrapper {
+  width: 892px;
+  align-self: flex-start;
+  padding-top: 32px;
+}
+
+h1 {
+  width: 860px;
+  left: 120px;
+  top: 122px;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.recomendation {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 46px;
+  letter-spacing: 0.5px;
+}
+
+.preview-form {
+  width: 892px;
+  height: 95px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 18px 18px 18px 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#preview-form-input {
+  width: 560px;
+  height: 40px;
+  background-color: transparent;
+}
+
+#preview-form-input::placeholder {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2785c;
+}
+
+.start-planning-btn {
+  width: 228px;
+  height: 59px;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.section-title {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f2785c;
+}
+
+.steps {
+  padding-top: 81px;
+}
+
+.steps .container {
+  display: block;
+  padding: 0 117px;
+}
+
+.steps .section-title {
+  padding-left: 11px;
+}
+
+.steps-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.steps-item {
+  width: 315px;
+  height: 180px;
+  padding: 130px 0px 10px;
+  color: #0d606f;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s all ease;
+  font-size: 19px;
+  word-spacing: 0.6px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: top center;
+  border-radius: 16px;
+}
+
+.steps-item:nth-child(1) {
+  background-image: url("../assets/svg/steps/steps-1.svg");
+  width: 304px;
+}
+
+.steps-item:nth-child(2) {
+  background-image: url("../assets/svg/steps/steps-2.svg");
+  margin-left: 12px;
+}
+
+.steps-item:nth-child(3) {
+  background-image: url("../assets/svg/steps/steps-3.svg");
+  width: 320px;
+}
+
+.steps-item:hover {
+  filter: brightness(120%);
+}
+
+.destinations {
+  padding-top: 72px;
+  padding-bottom: 173px;
+}
+
+.arrow-btn {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 450px;
+  z-index: 2;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.6s all ease;
+  filter: saturate(1000%);
+}
+
+.arrow-btn:hover {
+  filter: saturate(100%);
+}
+
+.prev-btn {
+  left: 50px;
+  background-image: url("../assets/svg/arrow-btn.svg");
+  background-size: cover;
+}
+
+.next-btn {
+  right: 50px;
+  background-image: url("../assets/svg/arrow-btn.svg");
+  transform: rotate(180deg);
+  background-size: cover;
+}
+
+.destination-list {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.find-more {
+  display: block;
+  width: 228px;
+  height: 59px;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 80px;
+  background-image: url(../assets/svg/find-more-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 30px;
+  background-position-y: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.destination-item {
+  position: relative;
+  width: 800px;
+  height: 800px;
+}
+
+.destination-item:nth-child(1)::after {
+  content: "Spain";
+}
+
+.destination-item:nth-child(2)::after {
+  content: "Japan";
+}
+
+.destination-item:nth-child(3)::after {
+  content: "USA";
+}
+
+.destination-item:nth-child(1)::after,
+.destination-item:nth-child(2)::after,
+.destination-item:nth-child(3)::after {
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.pagination-bullets {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 auto 40px;
+}
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.6s all ease;
+}
+
+.bullet:hover {
+  background-color: #e4907d;
+}
+
+.active {
+  background: #f2785c;
+}
+
+.stories {
+  /* height: 1425px; */
+  position: relative;
+  background-size: cover;
+  background-image: url("../assets/img/travel-stories-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0px;
+  background-position-x: center;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.stories .container {
+  background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 42px;
+}
+
+.stories .section-title {
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stories-content-wrapper {
+  padding-bottom: 42px;
+}
+
+.stories-list {
+  /* height: 1270px; */
+  margin-bottom: 33px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#stories-read-more {
+  font-size: 19px;
+  display: block;
+  text-decoration: underline;
+  color: #0d606f;
+}
+
+#stories-read-more:hover {
+  color: #f2785c;
+}
+
+.stories-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.stories-img-wrapper {
+  height: fit-content;
+  background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
+  filter: drop-shadow(0px 4px 4px #0d606f);
+}
+
+.stories-img {
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+}
+
+.stories-title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: #0d606f;
+  margin-bottom: 24px;
+}
+
+.stories p {
+  font-size: 19px;
+  letter-spacing: 0.2px;
+}
+
+.footer {
+  height: 61px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  gap: 328px;
+  position: relative;
+}
+
+.rs-link {
+  font-size: 16px;
+  line-height: 21px;
+  transition: 0.6s all ease;
+}
+
+.rs-link:hover {
+  color: #f2785c;
+}
+
+.footer-social {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 120px;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.git-hub-link {
+  display: block;
+  background-image: url("../assets/svg/github-icon.svg");
+  position: absolute;
+  left: 120px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.footer-social-link,
+.git-hub-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.6s all ease;
+}
+
+.footer-social-link:nth-child(1) {
+  background-image: url("../assets/svg/footer-social/instagram.svg");
+}
+
+.footer-social-link:nth-child(2) {
+  background-image: url("../assets/svg/footer-social/video.svg");
+}
+
+.footer-social-link:nth-child(3) {
+  background-image: url("../assets/svg/footer-social/twitter.svg");
+}
+
+.footer-social-link:hover,
+.git-hub-link:hover {
+  filter: invert(54%) sepia(12%) saturate(2437%) hue-rotate(323deg)
+    brightness(104%) contrast(90%);
+}
